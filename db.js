@@ -1,4 +1,5 @@
 // https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.9.zip
+// Как вы смотрите на то, чтобы сотрудничать вне кворк?
 import { MongoClient } from 'mongodb';
 const uri = 'mongodb://localhost:27017';
 const client = new MongoClient(uri);
