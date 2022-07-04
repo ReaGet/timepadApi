@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-const key = 'AIzaSyD2rrVSeVuthc0PrKESgtE6-5J3SHA7AV0';
+const key = '';
 const api = `https://maps.googleapis.com/maps/api/geocode/json?address=[address]&key=${key}&language=ru`;
 
 async function getCoordinatesByAddress(address) {
