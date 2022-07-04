@@ -49,7 +49,7 @@ Database.prototype.add = function(record) {
           }
         )
       } else {
-        console.log(docs)
+        // console.log(docs)
       }
     });
   }

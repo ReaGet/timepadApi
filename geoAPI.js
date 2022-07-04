@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
+import 'dotenv/config';
 
-const key = '';
+const key = process.env.KEY;
 const api = `https://maps.googleapis.com/maps/api/geocode/json?address=[address]&key=${key}&language=ru`;
 
 async function getCoordinatesByAddress(address) {
@@ -12,7 +13,7 @@ async function getCoordinatesByAddress(address) {
     
     if (!location)
       return [];
-
+      
     return {longitude: location.lng, latitude: location.lat};
   }).catch((err) => {
     console.log('Ошибка получения координат', err);
